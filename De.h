@@ -10,12 +10,13 @@ class De {
 
 private:
     int valeur;
+    bool etat;
 
 public:
     De();
     ~De();
     void lancer();
-
+    void piper();
     int getValeur() const;
     static bool gagne(const De &de1, const De &de2, const De &de3);
 };
